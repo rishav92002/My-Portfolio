@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/style/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="container">
+         {{>nav}}
+    <div class="header    text-center" id="home">
+        <h1>I am Rishav Kumar pursuing my b.tech degree at IIT Delhi</h1>
+        <p>I love problem solving and development</p>
+        <img src="public/images/myphoto2.jpg" alt="myphoto">
+    </div>
+    <div class="hero  text-center" id="about">
+        <img src="public/images/hero1.jpg" alt="herophoto">
+        <div class="detail p-5 ">
+            <h2>Hi,I'm Rishav. Nice to meet you.</h2>
+           <p>Lorem ipsum, dolor sit amet consectetur
+             adipisicing elit. Omnis consequatur quisquam
+              voluptate, veritatis suscipit necessitatibus 
+              aliquam placeat in totam quam quis illo adipisci 
+              autem nihil provident at minima rem quaerat. 
+              Vero voluptas dolorum quis nihil obcaecati
+               molestiae veritatis rerum fugit deleniti 
+               blanditiis saepe iure ipsa, 
+               reiciendis accusantium porro possimus voluptates?</p>
+
+        </div>
+    </div>
+    <div class="row card_state">
+        <div class="col-12 col-md-4 col-lg-4 mt-5">
+                <div class="card border-0 p-5 shadow">
+                    <div class="card-header bg-white border-0">
+    {{!-- if i have to add image here instead of i we can do so --}}
+                        <i class="fa fa-code"></i>
+                    </div>
+                    <div class="card-title text-center">
+                        <h4>Frontend Developer</h4>
+                        <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+                    </div>
+
+                    <div class="card-body text-center">
+                        <h5 class="text-primary">Languages I learnt:</h5>
+                        <p>HTML,CSS,javascript,Git</p>
+                        <hr class="mb-4">
+                        <h6 class="text-primary">Dev Tools:</h6>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">VS Code</li>
+                             <li class="list-group-item">Bootstrap</li>
+                            <li class="list-group-item">Github</li>
+                            <li class="list-group-item">Terminal</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        <div class="col-12 col-md-4 col-lg-4 mt-5">
+                <div class="card border-0 p-5 shadow">
+                    <div class="card-header bg-white border-0">
+                        <i class="fa fa-code"></i>
+                    </div>
+                    <div class="card-title text-center">
+                        <h4>backened Developer</h4>
+                        <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+                    </div>
+
+                    <div class="card-body text-center">
+                        <h5 class="text-primary">Languages I learnt:</h5>
+                        <p>javascript,Nodejs</p>
+                        <hr class="mb-4">
+                        <h6 class="text-primary">Dev Tools:</h6>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">VS Code</li>
+                             <li class="list-group-item">Mongodb</li>
+                            <li class="list-group-item">express</li>
+                            <li class="list-group-item">hbs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        <div class="col-12 col-md-4 col-lg-4 mt-5">
+                <div class="card border-0 p-5 shadow">
+                    <div class="card-header bg-white border-0">
+                        <i class="fa fa-code"></i>
+                    </div>
+                    <div class="card-title text-center">
+                        <h4>problem solving(Data structure and algorithm)</h4>
+                        <p>I like to solve coding problem .</p>
+                    </div>
+
+                    <div class="card-body text-center">
+                        <h5 class="text-primary">Languages I learnt:</h5>
+                        <p>c++,java,python</p>
+                        <hr class="mb-4">
+                        <h6 class="text-primary">Dev Tools:</h6>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">VS Code</li>
+                             <li class="list-group-item">Eclipse</li>
+                            <li class="list-group-item">Github</li>
+                            <li class="list-group-item">Terminal</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <hr class="mt-5 mb-5">
+    <div class="contact" id="contact">
+        <form method="post" action="/contactdata">
+        <h2 class="text-center">Contact me</h2>
+        <div class="mb-3">
+            <label for="username" class="form-label">name</label>
+            <input name="user" type="text" class="form-control" id="username" aria-describedby="emailHelp">
+            
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input name="email"type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            
+        </div>
+       
+        <div class="mb-3 ">
+             <label for="" class="mb-2">type your message here...</label>
+                    <div class="form-floating">
+                        <textarea name="msg" class="form-control" placeholder="Leave a comment here"
+                            id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Comments</label>
+                    </div>
+        </div>
+        <button name ="submit"type="submit" class="btn btn-primary">Submit</button>
+       </form>
+    </div>
+    <div class="footer bg-light">
+        <img src="public/images/logo3.jpg" alt="footer">
+        <h3>Living, learning, & leveling up myself </h3>
+         <div class="social_icons">
+                <a href="https://www.linkedin.com/in/rishav-kumar-3a7852247/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://instagram.com/rishavkumar3049?igshid=YmJhNjkzNzY="><i class="fa fa-instagram"></i></a>
+                <a href="https://twitter.com/RISHAVKUMAR3049"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100055924344960"><i class="fa fa-facebook"></i></a>
+                
+            </div>
+            <p>
+                Handcrafted by me © 2023</p>
+    </div>
+
+    </div>
+   
+    
+
+
+    <script src="js/bootstrap.min.js"></script>
+    
+</body>
+</html>
